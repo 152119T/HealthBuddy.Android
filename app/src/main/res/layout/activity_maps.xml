@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff000000"
+        android:text="Health Buddy"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff000000"
+        android:textStyle="bold" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        tools:context="com.spence.testinghealthbud.MapsActivity" />
+
+    <TextView
+        android:id="@+id/snippet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff7f7f7f" />
+
+    <Button
+        android:id="@+id/btnSOS"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:drawableTop="@android:drawable/ic_dialog_alert"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:clickable="true"
+        android:text="S.O.S"
+        android:textSize="40sp"
+        android:elevation="0dp"
+        android:visibility="visible" />
+
+    <ZoomControls
+        android:id="@+id/zoom_gestures_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+    </ZoomControls>
+
+    <CheckBox
+        android:id="@+id/mylocationbutton_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Location Button Toggle"
+        android:orientation="horizontal"/>
+
+    <CheckBox
+        android:id="@+id/mylocationlayer_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Location Layer Toggle"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

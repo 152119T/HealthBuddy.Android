@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TestingHealthBud</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="option_get_place">Get place</string>
+    <string name="pick_place">Choose a place</string>
+    <string name="map_not_ready">Map is not ready at the moment</string>
+    <string name="mylocationbutton_toggle"></string>
+    <string name="locataion_toggle"></string>
+    <string name="location_permission_denied">Permission for Location has been denied.</string>
+    <string name="permission_required_toast">Permission is required</string>
+    <string name="permission_rationale_location">Rationale Location</string>
+    <string name="btnEnglish">English</string>
+    <string name="btnChinese">Chinese</string>
+</resources>
